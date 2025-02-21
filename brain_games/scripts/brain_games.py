@@ -1,3 +1,3 @@
-from __init__ import greet
+from brain_games import greet
 if __name__ == '__main__':
-    greet
+    greet()
