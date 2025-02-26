@@ -17,5 +17,10 @@ include = ["brain_games"]
 [tool.hatch.build.targets.wheel]
 include = ["brain_games"]
 packages = ["brain_games"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.7",
+]
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
