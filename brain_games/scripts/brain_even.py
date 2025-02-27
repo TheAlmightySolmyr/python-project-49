@@ -1,4 +1,4 @@
-import random, prompt
+import random
 
 def is_even(num:int):
     
@@ -12,7 +12,7 @@ def even_game():
     question = random.randint(1,99)
     print(f'Question:{question}')
     answer = input()
-    result = None
+    result = True
     if is_even(question) == True and answer.lower() == 'yes':
         result = True
     elif is_even(question) == True and answer.lower() == 'no':
@@ -21,17 +21,15 @@ def even_game():
         result = True
     elif is_even(question) == False and answer.lower() == 'yes':
         result = False
-    match result:
-        case True:
-            print('Correct!')
-        case False:
-            print(f'{answer} is wrong answer. Try again!')
+    return result
 
 def the_game():
-    for _ in range(4):
-        result = even_game()
-        if result == False:
+    for x in range(3):
+        if even_game() == True:
+            print('Correct!')
+        else:
+            print('This is the wrong answer. Try again!')
             break
-    return 'Congratulations!'
-
+    if x == 2:
+        print('Congratulations!') 
 the_game()
