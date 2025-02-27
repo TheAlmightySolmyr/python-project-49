@@ -1,5 +1,6 @@
 import prompt
 
+name = prompt.string('May I have your name? ')
 
 def greet():
 
@@ -8,5 +9,4 @@ def greet():
 
 def welcome_user():
     
-    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
