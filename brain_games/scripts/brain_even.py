@@ -1,15 +1,17 @@
 import random
 
-def is_even(num:int):
+
+def is_even(num: int):
     
     if num % 2 == 0:
         return True
     else:
         return False
 
+
 def even_game():
-    print(f'Answer "yes" if the number is even, otherwise answer "no".')
-    question = random.randint(1,99)
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    question = random.randint(1, 99)
     print(f'Question:{question}')
     answer = input()
     result = True
@@ -23,6 +25,7 @@ def even_game():
         result = False
     return result
 
+
 def the_game():
     for x in range(3):
         if even_game() == True:
@@ -32,4 +35,6 @@ def the_game():
             break
     if x == 2:
         print('Congratulations!') 
+
+
 the_game()
