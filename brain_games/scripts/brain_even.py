@@ -1,4 +1,5 @@
 import random
+import brain_main
 
 
 def is_even(num: int):
@@ -17,6 +18,8 @@ def even_game():
     result = True
     if is_even(question) == True and answer.lower() == 'yes':
         result = True
+    elif answer.lower() != 'yes' or 'no':
+        result = False
     elif is_even(question) == True and answer.lower() == 'no':
         result = False
     elif is_even(question) == False and answer.lower() == 'no':
@@ -34,7 +37,7 @@ def the_game():
             print('This is the wrong answer. Try again!')
             break
     if x == 2:
-        print('Congratulations!') 
+        print(f'Congratulations') 
 
-
+brain_main.main()
 the_game()
