@@ -16,7 +16,7 @@ def calc_game_func():
     if int(answer) == eval(question):
         result = 1
     else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {eval(question)})')
+        print(f'{answer} is wrong answer ;(. Correct answer was {eval(question)}')
     return result
 
 def calc_game():
