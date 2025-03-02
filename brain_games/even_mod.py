@@ -36,7 +36,7 @@ def the_game():
             print('Correct!')
             result = result + 1
         else:
-            print(f'This is the wrong answer. Try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             break
     if result == 3:
         print(f'Congratulations, {name}!') 
