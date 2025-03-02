@@ -30,11 +30,13 @@ def even_game():
 
 
 def the_game():
-    for x in range(3):
+    result = 0
+    for _ in range(3):
         if even_game() == 1:
             print('Correct!')
+            result = result + 1
         else:
             print(f'This is the wrong answer. Try again, {name}!')
             break
-    if x == 2:
+    if result == 3:
         print(f'Congratulations, {name}!') 
