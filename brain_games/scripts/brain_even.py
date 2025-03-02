@@ -4,5 +4,6 @@ from brain_games.scripts.brain_main import main
 
 
 if __name__ == '__main__':
-    the_game()
     main()
+
+the_game()
