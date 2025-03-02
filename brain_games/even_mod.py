@@ -4,6 +4,7 @@ import prompt
 
 from brain_games.cli import name
 
+
 def is_even(num: int):
     
     if num % 2 == 0:
