@@ -1,4 +1,8 @@
-import random, brain_main, prompt
+import random
+
+import brain_main
+import prompt
+
 from brain_games.cli import name
 
 
@@ -8,6 +12,7 @@ def is_even(num: int):
         return True
     else:
         return False
+
 
 def even_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -29,12 +34,13 @@ def even_game():
 def the_game():
     for x in range(3):
         if even_game() == 1:
-            print(f'Correct!')
+            print('Correct!')
         else:
             print(f'This is the wrong answer. Try again, {name}!')
             break
     if x == 2:
         print(f'Congratulations, {name}!') 
+
 
 brain_main.main()
 the_game()
