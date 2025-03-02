@@ -15,6 +15,8 @@ def calc_game_func():
     result = 0
     if int(answer) == eval(question):
         result = 1
+    else:
+        print(f'{answer} is wrong answer ;(. Correct answer was {eval(question)})')
     return result
 
 def calc_game():
@@ -24,7 +26,7 @@ def calc_game():
             print('Correct!')
             result = result + 1
         else:
-            print(f'This is the wrong answer. Try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             break
     if result == 3:
-        print(f'Congratulations, {name}!') 
+        print(f'Congratulations, {name}!')
