@@ -1,11 +1,13 @@
-import prompt
 import random
+
+import prompt
+
 from brain_games.cli import name
 
 
 def is_prime(num):
     result = 0
-    for i in range(1,num+1):
+    for i in range(1, num + 1):
         if num % i == 0:
             result = result + 1
     if result == 2:
@@ -13,8 +15,9 @@ def is_prime(num):
     else:
         return False
 
+
 def prime_test():
-    num = random.randint(1,4000)
+    num = random.randint(1, 4000)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     print(f'Question: {num}')
     answer = prompt.string('Your answer:')

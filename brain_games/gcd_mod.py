@@ -1,11 +1,14 @@
-from brain_games.cli import name
 import math
 import random
+
 import prompt
 
+from brain_games.cli import name
+
+
 def gcd_test():
-    num_1 = random.randint(1,99)
-    num_2 = random.randint(1,99)
+    num_1 = random.randint(1, 99)
+    num_2 = random.randint(1, 99)
     result = 0
     print('Find the greatest common divisor of given numbers.')
     print(f'Question: {num_1} and {num_2}')
