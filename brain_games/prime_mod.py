@@ -23,9 +23,9 @@ def prime_test():
     answer = prompt.string('Your answer:')
     checked_num = is_prime(num)
     result = 0
-    if checked_num == True and answer.lower() == 'yes' or checked_num == False and answer.lower() == 'no':
+    if checked_num is True and answer.lower() == 'yes' or checked_num is False and answer.lower() == 'no':
         result = 1
-    elif checked_num == True and answer.lower() == 'no' or checked_num == False and answer.lower() == 'yes':
+    elif checked_num is True and answer.lower() == 'no' or checked_num is False and answer.lower() == 'yes':
         result = 0
         if answer.lower() == 'yes':
             print(f"{answer} is wrong answer ;(. Correct answer was 'no'")

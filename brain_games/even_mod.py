@@ -19,9 +19,9 @@ def even_game():
     print(f'Question: {question_num}')
     answer = prompt.string('Your answer:')
     result = 0
-    if is_even(question_num) == True and answer.lower() == 'yes' or is_even(question_num) == False and answer.lower() == 'no':
+    if is_even(question_num) is True and answer.lower() == 'yes' or is_even(question_num) is False and answer.lower() == 'no':
         result = 1
-    elif is_even(question_num) == True and answer.lower() == 'no' or is_even(question_num) == False and answer.lower() == 'yes':
+    elif is_even(question_num) is True and answer.lower() == 'no' or is_even(question_num) is False and answer.lower() == 'yes':
         result = 0
         if answer.lower() == 'yes':
             print(f"{answer} is wrong answer ;(. Correct answer was 'no'")
