@@ -13,7 +13,8 @@ def progression_test():
     question = rand_list[rand_index]
     rand_list[rand_index] = '..'
     print('What number is missing in the progression?')
-    print(f'Question: {rand_list}')
+    str_rand_list = [str(i) for i in rand_list]
+    print(f'Question: {' '.join(str_rand_list)}')
     answer = prompt.string('Your answer:')
     result = 0
     if int(answer) == question:
