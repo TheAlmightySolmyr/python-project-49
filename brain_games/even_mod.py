@@ -6,11 +6,7 @@ from brain_games.cli import welcome_user
 
 
 def is_even(num: int):
-    
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    return num % 2 == 0
 
 
 def even_game():
@@ -18,15 +14,12 @@ def even_game():
     question_num = random.randint(1, 99)
     print(f'Question: {question_num}')
     answer = prompt.string('Your answer:')
+    correct_answer = 'yes' if is_even(question_num) else 'no'
     result = 0
-    if is_even(question_num) is True and answer.lower() == 'yes' or is_even(question_num) is False and answer.lower() == 'no':
+    if answer == correct_answer:
         result = 1
-    elif is_even(question_num) is True and answer.lower() == 'no' or is_even(question_num) is False and answer.lower() == 'yes':
-        result = 0
-        if answer.lower() == 'yes':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'no'")
-        elif answer.lower() == 'no':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'yes'")
+    else:
+        print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'")
     return result
 
 

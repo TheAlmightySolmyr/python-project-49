@@ -22,15 +22,12 @@ def prime_test():
     print(f'Question: {num}')
     answer = prompt.string('Your answer:')
     checked_num = is_prime(num)
+    correct_answer = 'yes' if checked_num else 'no'
     result = 0
-    if checked_num is True and answer.lower() == 'yes' or checked_num is False and answer.lower() == 'no':
+    if answer == correct_answer:
         result = 1
-    elif checked_num is True and answer.lower() == 'no' or checked_num is False and answer.lower() == 'yes':
-        result = 0
-        if answer.lower() == 'yes':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'no'")
-        elif answer.lower() == 'no':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'yes'")
+    else:
+        print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'")
     return result
 
 
