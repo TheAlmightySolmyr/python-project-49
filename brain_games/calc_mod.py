@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
 def calc_game_func():
@@ -22,6 +22,7 @@ def calc_game_func():
 
 
 def calc_game():
+    name = welcome_user()
     result = 0
     for _ in range(3):
         if calc_game_func() == 1:

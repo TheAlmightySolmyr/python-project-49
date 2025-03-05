@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
 def is_even(num: int):
@@ -16,7 +16,7 @@ def is_even(num: int):
 def even_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     question_num = random.randint(1, 99)
-    print(f'Question:{question_num}')
+    print(f'Question: {question_num}')
     answer = prompt.string('Your answer:')
     result = 0
     if is_even(question_num) == True and answer.lower() == 'yes' or is_even(question_num) == False and answer.lower() == 'no':
@@ -31,6 +31,7 @@ def even_game():
 
 
 def the_game():
+    name = welcome_user()
     result = 0
     for _ in range(3):
         if even_game() == 1:

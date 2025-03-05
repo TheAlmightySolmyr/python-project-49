@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
 def progression_test():
@@ -24,6 +24,7 @@ def progression_test():
     
 
 def progression_game():
+    name = welcome_user()
     result = 0
     for _ in range(3):
         if progression_test() == 1:

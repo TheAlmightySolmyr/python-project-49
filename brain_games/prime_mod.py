@@ -2,7 +2,7 @@ import random
 
 import prompt
 
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
 def is_prime(num):
@@ -35,6 +35,7 @@ def prime_test():
 
 
 def prime_game():
+    name = welcome_user()
     result = 0
     for _ in range(3):
         if prime_test() == 1:

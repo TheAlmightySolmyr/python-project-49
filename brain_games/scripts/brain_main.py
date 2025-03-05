@@ -1,8 +1,7 @@
-from brain_games.cli import greet, welcome_user
+from brain_games.cli import welcome_user
 
 
 def main():
-    greet()
     welcome_user()
 
 

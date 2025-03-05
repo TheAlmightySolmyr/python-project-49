@@ -3,7 +3,7 @@ import random
 
 import prompt
 
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
 def gcd_test():
@@ -21,6 +21,7 @@ def gcd_test():
 
 
 def gcd_game():
+    name = welcome_user()
     result = 0
     for _ in range(3):
         if gcd_test() == 1:
