@@ -20,14 +20,14 @@ def prime_test():
     num = random.randint(1, 4000)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     print(f'Question: {num}')
-    answer = prompt.string('Your answer:')
+    answ = prompt.string('Your answer:')
     checked_num = is_prime(num)
-    correct_answer = 'yes' if checked_num else 'no'
+    right_answ = 'yes' if checked_num else 'no'
     result = 0
-    if answer == correct_answer:
+    if answ == right_answ:
         result = 1
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'")
+        print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
     return result
 
 

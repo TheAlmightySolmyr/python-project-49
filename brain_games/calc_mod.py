@@ -9,15 +9,15 @@ def calc_game_func():
     operators = ['-', '+', '*']
     num_1 = random.randint(1, 99)
     num_2 = random.randint(1, 99)
-    question = (str(num_1) + ' ' + random.choice(operators) + ' ' + str(num_2))
+    qst = (str(num_1) + ' ' + random.choice(operators) + ' ' + str(num_2))
     print('What is the result of the expression?')
-    print(f'Question: {question}')
-    answer = prompt.string('Your answer:')
+    print(f'Question: {qst}')
+    answ = prompt.string('Your answer:')
     result = 0
-    if int(answer) == eval(question):
+    if int(answ) == eval(qst):
         result = 1
     else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {eval(question)}')
+        print(f'{answ} is wrong answer ;(. Correct answer was {eval(qst)}')
     return result
 
 

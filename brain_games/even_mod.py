@@ -13,13 +13,13 @@ def even_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     question_num = random.randint(1, 99)
     print(f'Question: {question_num}')
-    answer = prompt.string('Your answer:')
-    correct_answer = 'yes' if is_even(question_num) else 'no'
+    answ = prompt.string('Your answer:')
+    right_answ = 'yes' if is_even(question_num) else 'no'
     result = 0
-    if answer == correct_answer:
+    if answ == right_answ:
         result = 1
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'")
+        print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
     return result
 
 

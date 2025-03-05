@@ -7,16 +7,16 @@ from brain_games.cli import welcome_user
 
 
 def gcd_test():
-    num_1 = random.randint(1, 99)
-    num_2 = random.randint(1, 99)
+    n1 = random.randint(1, 99)
+    n2 = random.randint(1, 99)
     result = 0
     print('Find the greatest common divisor of given numbers.')
-    print(f'Question: {num_1} {num_2}')
-    answer = prompt.string('Your answer:')
-    if int(answer) == math.gcd(num_1, num_2):
+    print(f'Question: {n1} {n2}')
+    answ = prompt.string('Your answer:')
+    if int(answ) == math.gcd(n1, n2):
         result = 1
     else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {math.gcd(num_1, num_2)}')
+        print(f'{answ} is wrong answer ;(. Correct answer was {math.gcd(n1, n2)}')
     return result
 
 
