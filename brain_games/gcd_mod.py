@@ -11,7 +11,7 @@ def gcd_test():
     num_2 = random.randint(1, 99)
     result = 0
     print('Find the greatest common divisor of given numbers.')
-    print(f'Question: {num_1} and {num_2}')
+    print(f'Question: {num_1} {num_2}')
     answer = prompt.string('Your answer:')
     if int(answer) == math.gcd(num_1, num_2):
         result = 1
