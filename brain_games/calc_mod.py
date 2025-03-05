@@ -9,7 +9,7 @@ def calc_game_func():
     operators = ['-', '+', '*']
     num_1 = random.randint(1, 99)
     num_2 = random.randint(1, 99)
-    question = (str(num_1) + random.choice(operators) + str(num_2))
+    question = (str(num_1) + ' ' + random.choice(operators) + ' ' + str(num_2))
     print('What is the result of the expression?')
     print(f'Question: {question}')
     answer = prompt.string('Your answer:')
