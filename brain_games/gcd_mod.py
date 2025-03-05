@@ -13,10 +13,11 @@ def gcd_test():
     print('Find the greatest common divisor of given numbers.')
     print(f'Question: {n1} {n2}')
     answ = prompt.string('Your answer:')
-    if int(answ) == math.gcd(n1, n2):
+    right_answ = math.gcd(n1, n2)
+    if int(answ) == right_answ:
         result = 1
     else:
-        print(f'{answ} is wrong answer ;(. Correct answer was {math.gcd(n1, n2)}')
+        print(f'{answ} is wrong answer ;(. Correct answer was {right_answ}')
     return result
 
 
