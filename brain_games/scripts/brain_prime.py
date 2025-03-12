@@ -1,4 +1,4 @@
-from brain_games.prime_mod import prime_game
+from brain_games.games.prime_mod import prime_game
 
 
 def main():
