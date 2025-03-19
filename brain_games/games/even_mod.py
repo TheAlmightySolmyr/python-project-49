@@ -2,6 +2,8 @@ import random
 
 import prompt
 
+from brain_games.cli import is_right
+
 
 def is_even(num: int):
     return num % 2 == 0
@@ -13,9 +15,4 @@ def even_game():
     print(f'Question: {question_num}')
     answ = prompt.string('Your answer:')
     right_answ = 'yes' if is_even(question_num) else 'no'
-    result = 0
-    if answ == right_answ:
-        result = 1
-    else:
-        print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
-    return result
+    return is_right(answ, right_answ)

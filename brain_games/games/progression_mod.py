@@ -2,6 +2,8 @@ import random
 
 import prompt
 
+from brain_games.cli import is_right
+
 
 def progression_game():
     start = random.randint(1, 99)
@@ -14,9 +16,4 @@ def progression_game():
     str_rand_list = [str(i) for i in rand_list]
     print(f'Question: {' '.join(str_rand_list)}')
     answer = prompt.string('Your answer:')
-    result = 0
-    if int(answer) == question:
-        result = 1
-    else:
-        print(f'{answer} is wrong answer ;(. Correct answer was {question}')
-    return result
+    return is_right(answer, question)

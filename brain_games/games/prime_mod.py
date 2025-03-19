@@ -2,6 +2,8 @@ import random
 
 import prompt
 
+from brain_games.cli import is_right
+
 
 def is_prime(num):
     result = 0
@@ -21,9 +23,4 @@ def prime_game():
     answ = prompt.string('Your answer:')
     checked_num = is_prime(num)
     right_answ = 'yes' if checked_num else 'no'
-    result = 0
-    if answ == right_answ:
-        result = 1
-    else:
-        print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
-    return result
+    return is_right(answ, right_answ)
