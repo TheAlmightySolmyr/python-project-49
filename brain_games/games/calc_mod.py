@@ -8,6 +8,7 @@ from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, OPERATORS
 
 def calculate(num_1, num_2, operator):
     match operator:
+        
         case '+':
             return num_1 + num_2
         case '-':
