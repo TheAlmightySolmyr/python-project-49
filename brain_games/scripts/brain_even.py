@@ -1,8 +1,9 @@
-from brain_games.games.even_mod import the_game
+from brain_games.cli import run_three_time
+from brain_games.games.even_mod import even_game
 
 
 def main():
-    the_game()
+    run_three_time(even_game)
 
 
 if __name__ == '__main__':

@@ -2,8 +2,6 @@ import random
 
 import prompt
 
-from brain_games.cli import welcome_user
-
 
 def is_prime(num):
     result = 0
@@ -16,7 +14,7 @@ def is_prime(num):
         return False
 
 
-def prime_test():
+def prime_game():
     num = random.randint(1, 4000)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     print(f'Question: {num}')
@@ -29,18 +27,4 @@ def prime_test():
     else:
         print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
     return result
-
-
-def prime_game():
-    name = welcome_user()
-    result = 0
-    for _ in range(3):
-        if prime_test() == 1:
-            print('Correct!')
-            result = result + 1
-        else:
-            print(f'Let\'s try again, {name}!')
-            break
-    if result == 3:
-        print(f'Congratulations, {name}!')
         

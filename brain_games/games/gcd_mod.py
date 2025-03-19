@@ -3,10 +3,8 @@ import random
 
 import prompt
 
-from brain_games.cli import welcome_user
 
-
-def gcd_test():
+def gcd_game():
     n1 = random.randint(1, 99)
     n2 = random.randint(1, 99)
     result = 0
@@ -19,17 +17,3 @@ def gcd_test():
     else:
         print(f'{answ} is wrong answer ;(. Correct answer was {right_answ}')
     return result
-
-
-def gcd_game():
-    name = welcome_user()
-    result = 0
-    for _ in range(3):
-        if gcd_test() == 1:
-            print('Correct!')
-            result = result + 1
-        else:
-            print(f'Let\'s try again, {name}!')
-            break
-    if result == 3:
-        print(f'Congratulations, {name}!')

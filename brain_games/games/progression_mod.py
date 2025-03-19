@@ -2,10 +2,8 @@ import random
 
 import prompt
 
-from brain_games.cli import welcome_user
 
-
-def progression_test():
+def progression_game():
     start = random.randint(1, 99)
     step = random.randint(1, 99)
     rand_list = [start + i * step for i in range(10)]
@@ -22,17 +20,3 @@ def progression_test():
     else:
         print(f'{answer} is wrong answer ;(. Correct answer was {question}')
     return result
-    
-
-def progression_game():
-    name = welcome_user()
-    result = 0
-    for _ in range(3):
-        if progression_test() == 1:
-            print('Correct!')
-            result = result + 1
-        else:
-            print(f'Let\'s try again, {name}!')
-            break
-    if result == 3:
-        print(f'Congratulations, {name}!')
