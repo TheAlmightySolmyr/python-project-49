@@ -1,0 +1,3 @@
+MIN_GEN_NUMBER = 1
+MAX_GEN_NUMBER = 99
+OPERATORS = ('-', '+', '*')

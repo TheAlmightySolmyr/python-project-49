@@ -1,9 +1,9 @@
 from brain_games.cli import run_three_time
-from brain_games.games.prime_mod import prime_game
+from brain_games.games.prime_mod import get_prime
 
 
 def main():
-    run_three_time(prime_game)
+    run_three_time(get_prime)
 
 
 if __name__ == '__main__':

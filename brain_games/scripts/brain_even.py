@@ -1,9 +1,9 @@
 from brain_games.cli import run_three_time
-from brain_games.games.even_mod import even_game
+from brain_games.games.even_mod import get_even
 
 
 def main():
-    run_three_time(even_game)
+    run_three_time(get_even)
 
 
 if __name__ == '__main__':

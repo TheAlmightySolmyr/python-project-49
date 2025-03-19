@@ -4,6 +4,8 @@ import prompt
 
 from brain_games.cli import is_right
 
+from brain_games.engine import MIN_GEN_NUMBER, MAX_GEN_NUMBER
+
 
 def is_prime(num):
     result = 0
@@ -16,8 +18,8 @@ def is_prime(num):
         return False
 
 
-def prime_game():
-    num = random.randint(1, 4000)
+def get_prime():
+    num = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     print(f'Question: {num}')
     answ = prompt.string('Your answer:')
