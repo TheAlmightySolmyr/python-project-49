@@ -3,8 +3,7 @@ import random
 import prompt
 
 from brain_games.cli import is_right
-
-from brain_games.engine import MIN_GEN_NUMBER, MAX_GEN_NUMBER, OPERATORS
+from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, OPERATORS
 
 
 def calculate(num_1, num_2, operator):
