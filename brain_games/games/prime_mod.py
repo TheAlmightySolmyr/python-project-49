@@ -27,4 +27,3 @@ def prime_game():
     else:
         print(f"{answ} is wrong answer ;(. Correct answer was '{right_answ}'")
     return result
-        
