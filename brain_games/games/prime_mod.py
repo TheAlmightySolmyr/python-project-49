@@ -1,8 +1,6 @@
 import random
 
-import prompt
-
-from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, is_right
+from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER
 
 
 def is_prime(num):
@@ -17,10 +15,7 @@ def is_prime(num):
 
 
 def get_prime():
-    num = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
+    question_num = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    print(f'Question: {num}')
-    answ = prompt.string('Your answer:')
-    checked_num = is_prime(num)
-    right_answ = 'yes' if checked_num else 'no'
-    return is_right(answ, right_answ)
+    right_answ = 'yes' if is_prime(question_num) else 'no'
+    return question_num, right_answ

@@ -1,8 +1,6 @@
 import random
 
-import prompt
-
-from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, OPERATORS, is_right
+from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, OPERATORS
 
 
 def calculate(num_1, num_2, operator):
@@ -20,7 +18,4 @@ def get_calc():
     num_2 = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
     qst = f'{num_1} {random_operator} {num_2}'
     right_answer = calculate(num_1, num_2, random_operator)
-    print('What is the result of the expression?')
-    print(f'Question: {qst}')
-    answer = prompt.string('Your answer:')
-    return is_right(answer, right_answer)
+    return qst, right_answer
