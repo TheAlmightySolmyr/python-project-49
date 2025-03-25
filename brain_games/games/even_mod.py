@@ -2,8 +2,7 @@ import random
 
 import prompt
 
-from brain_games.cli import is_right
-from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER
+from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, is_right
 
 
 def is_even(num: int):

@@ -1,4 +1,4 @@
-from brain_games.cli import run_three_time
+from brain_games.engine import run_three_time
 from brain_games.games.calc_mod import get_calc
 
 
