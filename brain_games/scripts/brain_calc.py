@@ -1,9 +1,9 @@
-from brain_games.engine import run_three_time
+from brain_games.engine import run_game
 from brain_games.games.calc_mod import get_calc
 
 
 def main():
-    run_three_time(get_calc)
+    run_game(get_calc)
 
 
 if __name__ == '__main__':

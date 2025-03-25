@@ -7,7 +7,7 @@ MAX_GEN_NUMBER = 99
 OPERATORS = ('-', '+', '*')
 
 
-def run_three_time(func):
+def run_game(func):
     name = welcome_user()
     print('What is the result of the expression?')
     for _ in range(3):

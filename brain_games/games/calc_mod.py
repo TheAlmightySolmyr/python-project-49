@@ -16,6 +16,6 @@ def get_calc():
     random_operator = random.choice(OPERATORS)
     num_1 = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
     num_2 = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
-    qst = f'{num_1} {random_operator} {num_2}'
+    question = f'{num_1} {random_operator} {num_2}'
     right_answer = calculate(num_1, num_2, random_operator)
-    return qst, right_answer
+    return question, right_answer
