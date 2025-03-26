@@ -2,19 +2,15 @@ import prompt
 
 from brain_games.cli import welcome_user
 
-MIN_GEN_NUMBER = 1
-MAX_GEN_NUMBER = 99
-OPERATORS = ('-', '+', '*')
 
-
-def run_game(func):
+def run_game(func, rules):
     name = welcome_user()
-    print('What is the result of the expression?')
+    print(rules)
     for _ in range(3):
         qst, right_answ = func()
         print(f'Question: {qst}')
         answ = prompt.string('Your answer:')
-        if str(right_answ) == str(answ):
+        if right_answ == answ.lower():
             print('Correct!')
         else:
             print(f'{answ} is wrong answer ;(. Correct answer was {right_answ}')

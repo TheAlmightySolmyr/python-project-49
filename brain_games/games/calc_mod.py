@@ -1,6 +1,9 @@
 import random
 
-from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER, OPERATORS
+MIN_GEN_NUMBER = 1
+MAX_GEN_NUMBER = 99
+OPERATORS = ('-', '+', '*')
+CALC_RULES = 'What is the result of the expression?'
 
 
 def calculate(num_1, num_2, operator):

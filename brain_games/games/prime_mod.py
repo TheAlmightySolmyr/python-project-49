@@ -1,6 +1,8 @@
 import random
 
-from brain_games.engine import MAX_GEN_NUMBER, MIN_GEN_NUMBER
+MIN_GEN_NUMBER = 1
+MAX_GEN_NUMBER = 99
+PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -16,6 +18,5 @@ def is_prime(num):
 
 def get_prime():
     question = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     right_answer = 'yes' if is_prime(question) else 'no'
     return question, right_answer
