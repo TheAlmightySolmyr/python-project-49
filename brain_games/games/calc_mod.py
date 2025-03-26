@@ -21,4 +21,4 @@ def get_calc():
     num_2 = random.randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)
     question = f'{num_1} {random_operator} {num_2}'
     right_answer = calculate(num_1, num_2, random_operator)
-    return question, right_answer
+    return question, str(right_answer)
