@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+
 from brain_games.engine import run_game
 from brain_games.games.gcd_mod import GCD_RULES, get_gcd
 
