@@ -2,6 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Brain games is a simple math game based on five mini games."
+author = [{name = 'Ilya Miroshnichenko', email = 'iliya.miroshnichenko@yandex.ru'}]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
